@@ -47,6 +47,7 @@ public class ShowCabAdapter extends RecyclerView.Adapter<ShowCabAdapter.CabHolde
             @Override
             public void onClick(View view) {
                 common.showToast(context, list.get(position).getCabId());
+
             }
         });
 

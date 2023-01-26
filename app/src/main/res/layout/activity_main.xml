@@ -49,8 +49,8 @@
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/icons"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp"
-                    app:cardMaxElevation="20dp"
+                    app:cardElevation="5dp"
+                    app:cardMaxElevation="5dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp">
 
@@ -82,7 +82,7 @@
                             android:layout_height="25dp"
                             android:layout_gravity="center_vertical"
                             android:src="@drawable/ic_baseline_search_24"
-                            android:tint="@color/colorPrimary">
+                            app:tint="@color/black">
 
                         </ImageView>
 
