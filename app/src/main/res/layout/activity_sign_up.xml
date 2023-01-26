@@ -14,6 +14,16 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <include layout="@layout/toolbar">
+
+            </include>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -86,7 +96,7 @@
                             android:layout_gravity="center"
                             android:layout_marginBottom="10dp"
                             android:text="Profile Picture"
-                            android:textColor="@color/icons"
+                            android:textColor="@color/black"
                             android:textStyle="bold" />
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -151,6 +161,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:text="signup"
+                            android:textStyle="bold"
                             android:transitionName="btn_log"></Button>
 
                         <Button
@@ -160,12 +171,14 @@
                             android:layout_marginTop="10dp"
                             android:background="#00000000"
                             android:text="already have an account? login"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/black"
                             android:transitionName="btn_sign"></Button>
 
                     </LinearLayout>
 
             </LinearLayout>
+        </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

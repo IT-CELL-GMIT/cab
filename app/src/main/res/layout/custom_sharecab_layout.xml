@@ -3,17 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:backgroundTint="@color/light">
+    android:backgroundTint="@color/Yellow">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/icons"
         app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
-        app:cardMaxElevation="20dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp"
         android:layout_gravity="center"
-        android:backgroundTint="#4798E8"
+        android:backgroundTint="#fece2f"
         android:layout_margin="15dp">
 
         <LinearLayout
@@ -33,9 +33,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="FROM : "
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:textStyle="bold"
-            android:textColor="@color/icons">
+            android:textColor="@color/black">
 
         </TextView>
 
@@ -46,7 +46,7 @@
             android:text=""
             android:textSize="20dp"
             android:textStyle="bold"
-            android:textColor="@color/icons">
+            android:textColor="@color/black">
 
         </TextView>
 
@@ -63,9 +63,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TO : "
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:textStyle="bold"
-            android:textColor="@color/icons">
+            android:textColor="@color/black">
 
         </TextView>
 
@@ -76,7 +76,7 @@
             android:text=""
             android:textSize="20dp"
             android:textStyle="bold"
-            android:textColor="@color/icons">
+            android:textColor="@color/black">
 
         </TextView>
 
@@ -93,9 +93,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TIME : "
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:textStyle="bold"
-            android:textColor="@color/icons">
+            android:textColor="@color/black">
 
         </TextView>
 
@@ -106,7 +106,7 @@
             android:text=""
             android:textSize="20dp"
             android:textStyle="bold"
-            android:textColor="@color/icons">
+            android:textColor="@color/black">
 
         </TextView>
 
@@ -122,8 +122,8 @@
                 android:layout_marginTop="15dp"
                 android:text="book now"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimary"
-                android:backgroundTint="@color/light"
+                android:textColor="@color/black"
+                android:backgroundTint="#FFBF00"
                 app:cornerRadius="12dp">
 
             </Button>
