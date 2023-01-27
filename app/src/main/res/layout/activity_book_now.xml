@@ -25,16 +25,6 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <!--    <androidx.cardview.widget.CardView-->
-                <!--        android:layout_width="match_parent"-->
-                <!--        android:layout_height="wrap_content"-->
-                <!--        app:cardBackgroundColor="@color/icons"-->
-                <!--        app:cardCornerRadius="20dp"-->
-                <!--        app:cardElevation="20dp"-->
-                <!--        app:cardMaxElevation="20dp"-->
-                <!--        android:layout_gravity="center"-->
-                <!--        android:layout_margin="15dp">-->
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -56,21 +46,15 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
-                            android:src="@drawable/location_png">
-
-                        </ImageView>
-
                         <TextView
+                            android:id="@+id/startingAddress"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
-                            android:text="choose your location"
-                            android:textColor="@color/black"
+                            android:text=""
+                            android:backgroundTint="@color/black"
+                            android:background="@drawable/rect_background"
+                            android:textColor="@color/Yellow"
                             android:textSize="18dp">
 
                         </TextView>
@@ -78,38 +62,8 @@
                     </LinearLayout>
 
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/address1"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_margin="10dp"
-                        android:hint="Enter Address"
-                        android:transitionName="name">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/edStartingAddress"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                        </com.google.android.material.textfield.TextInputEditText>
-
-                    </com.google.android.material.textfield.TextInputLayout>
-
 
                 </LinearLayout>
-
-                <!--    </androidx.cardview.widget.CardView>-->
-
-                <!--    <androidx.cardview.widget.CardView-->
-                <!--        android:layout_width="match_parent"-->
-                <!--        android:layout_height="wrap_content"-->
-                <!--        app:cardBackgroundColor="@color/icons"-->
-                <!--        app:cardCornerRadius="20dp"-->
-                <!--        app:cardElevation="20dp"-->
-                <!--        app:cardMaxElevation="20dp"-->
-                <!--        android:layout_gravity="center"-->
-                <!--        android:layout_margin="15dp">-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -127,39 +81,21 @@
 
                     </TextView>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/address2"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                    <TextView
+                        android:id="@+id/endingAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:hint="Enter Address"
-                        android:transitionName="name">
+                        android:text=""
+                        android:background="@drawable/rect_background"
+                        android:backgroundTint="@color/black"
+                        android:textColor="@color/Yellow"
+                        android:textSize="18dp">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/endingAddress"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                        </com.google.android.material.textfield.TextInputEditText>
-
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </TextView>
 
 
                 </LinearLayout>
-
-                <!--    </androidx.cardview.widget.CardView>-->
-
-
-                <!--    <androidx.cardview.widget.CardView-->
-                <!--        android:layout_width="match_parent"-->
-                <!--        android:layout_height="wrap_content"-->
-                <!--        app:cardBackgroundColor="@color/icons"-->
-                <!--        app:cardCornerRadius="20dp"-->
-                <!--        app:cardElevation="20dp"-->
-                <!--        app:cardMaxElevation="20dp"-->
-                <!--        android:layout_gravity="center"-->
-                <!--        android:layout_margin="15dp">-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -183,29 +119,17 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_margin="10dp"
                         android:background="@drawable/rect_background"
+                        android:backgroundTint="@color/black"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:text="select"
-                        android:textColor="@color/black"
+                        android:textColor="@color/Yellow"
                         android:textSize="20dp">
 
                     </TextView>
 
 
                 </LinearLayout>
-
-                <!--    </androidx.cardview.widget.CardView>-->
-
-
-                <!--    <androidx.cardview.widget.CardView-->
-                <!--        android:layout_width="match_parent"-->
-                <!--        android:layout_height="wrap_content"-->
-                <!--        app:cardBackgroundColor="@color/icons"-->
-                <!--        app:cardCornerRadius="20dp"-->
-                <!--        app:cardElevation="20dp"-->
-                <!--        app:cardMaxElevation="20dp"-->
-                <!--        android:layout_gravity="center"-->
-                <!--        android:layout_margin="15dp">-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -229,10 +153,11 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_margin="10dp"
                         android:background="@drawable/rect_background"
+                        android:backgroundTint="@color/black"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:text="select"
-                        android:textColor="@color/black"
+                        android:textColor="@color/Yellow"
                         android:textSize="20dp">
 
                     </TextView>
@@ -240,197 +165,151 @@
 
                 </LinearLayout>
 
-                <!--    </androidx.cardview.widget.CardView>-->
-
-
-                <!--    <androidx.cardview.widget.CardView-->
-                <!--        android:layout_width="match_parent"-->
-                <!--        android:layout_height="wrap_content"-->
-                <!--        app:cardBackgroundColor="@color/icons"-->
-                <!--        app:cardCornerRadius="20dp"-->
-                <!--        app:cardElevation="20dp"-->
-                <!--        app:cardMaxElevation="20dp"-->
-                <!--        android:layout_gravity="center"-->
-                <!--        android:layout_margin="15dp">-->
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!--                    <TextView-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="wrap_content"-->
-                    <!--                        android:text="Cab Details : "-->
-                    <!--                        android:textColor="@color/black"-->
-                    <!--                        android:textStyle="bold"-->
-                    <!--                        android:textSize="18dp"-->
-                    <!--                        android:layout_margin="10dp">-->
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Cab Details : "
+                                            android:textColor="@color/black"
+                                            android:textStyle="bold"
+                                            android:textSize="18dp"
+                                            android:layout_margin="10dp">
 
-                    <!--                    </TextView>-->
+                                        </TextView>
 
-                    <!--                    <LinearLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="wrap_content"-->
-                    <!--                        android:orientation="vertical">-->
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="match_parent"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:text="Name : "-->
-                    <!--                            android:textColor="@color/primaryTextColor"-->
-                    <!--                            android:textSize="16dp"-->
-                    <!--                            android:layout_marginLeft="10dp"-->
-                    <!--                            android:layout_marginRight="10dp"-->
-                    <!--                            android:layout_marginTop="10dp"-->
-                    <!--                            android:layout_marginBottom="5dp">-->
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Name : "
+                                                android:textColor="@color/primaryTextColor"
+                                                android:textSize="16dp">
 
-                    <!--                        </TextView>-->
+                                            </TextView>
 
-                    <!--                        <com.google.android.material.textfield.TextInputLayout-->
-                    <!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
-                    <!--                            android:layout_width="match_parent"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:hint="Enter car name"-->
-                    <!--                            android:layout_marginLeft="10dp"-->
-                    <!--                            android:layout_marginRight="10dp"-->
-                    <!--                            android:layout_marginBottom="10dp"-->
-                    <!--                            android:transitionName="name">-->
+                                            <TextView
+                                                android:id="@+id/tvCarName"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=""
+                                                android:textColor="@color/Yellow"
+                                                android:background="@drawable/rect_background"
+                                                android:backgroundTint="@color/black"
+                                                android:textSize="16dp">
 
-                    <!--                            <com.google.android.material.textfield.TextInputEditText-->
-                    <!--                                android:id="@+id/edCarName"-->
-                    <!--                                android:layout_width="match_parent"-->
-                    <!--                                android:layout_height="match_parent">-->
-
-                    <!--                            </com.google.android.material.textfield.TextInputEditText>-->
-
-                    <!--                        </com.google.android.material.textfield.TextInputLayout>-->
+                                            </TextView>
 
 
-                    <!--                    </LinearLayout>-->
+                                        </LinearLayout>
 
 
-                    <!--                    <LinearLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="wrap_content"-->
-                    <!--                        android:orientation="vertical">-->
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="match_parent"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:text="Car Model : "-->
-                    <!--                            android:textColor="@color/primaryTextColor"-->
-                    <!--                            android:textSize="16dp"-->
-                    <!--                            android:layout_marginLeft="10dp"-->
-                    <!--                            android:layout_marginRight="10dp"-->
-                    <!--                            android:layout_marginTop="10dp"-->
-                    <!--                            android:layout_marginBottom="5dp">-->
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Car Model : "
+                                                android:textColor="@color/primaryTextColor"
+                                                android:textSize="16dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_marginTop="10dp"
+                                                android:layout_marginBottom="5dp">
 
-                    <!--                        </TextView>-->
+                                            </TextView>
 
-                    <!--                        <com.google.android.material.textfield.TextInputLayout-->
-                    <!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
-                    <!--                            android:layout_width="match_parent"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:hint="Enter car model"-->
-                    <!--                            android:layout_marginLeft="10dp"-->
-                    <!--                            android:layout_marginRight="10dp"-->
-                    <!--                            android:layout_marginBottom="10dp"-->
-                    <!--                            android:transitionName="name">-->
+                                            <TextView
+                                                android:id="@+id/tvCarModel"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=""
+                                                android:textColor="@color/Yellow"
+                                                android:background="@drawable/rect_background"
+                                                android:backgroundTint="@color/black"
+                                                android:textSize="16dp">
 
-                    <!--                            <com.google.android.material.textfield.TextInputEditText-->
-                    <!--                                android:id="@+id/edCarModel"-->
-                    <!--                                android:layout_width="match_parent"-->
-                    <!--                                android:layout_height="match_parent">-->
+                                            </TextView>
 
-                    <!--                            </com.google.android.material.textfield.TextInputEditText>-->
-
-                    <!--                        </com.google.android.material.textfield.TextInputLayout>-->
+                                        </LinearLayout>
 
 
-                    <!--                    </LinearLayout>-->
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Driver Contact no. : "
+                                                android:textColor="@color/primaryTextColor"
+                                                android:textSize="16dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_marginTop="10dp"
+                                                android:layout_marginBottom="5dp">
+
+                                            </TextView>
+
+                                            <TextView
+                                                android:id="@+id/tvDriverContact"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=""
+                                                android:textColor="@color/Yellow"
+                                                android:background="@drawable/rect_background"
+                                                android:backgroundTint="@color/black"
+                                                android:textSize="16dp">
+
+                                            </TextView>
 
 
-                    <!--                    <LinearLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="wrap_content"-->
-                    <!--                        android:orientation="vertical">-->
-
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="match_parent"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:text="Driver Contact no. : "-->
-                    <!--                            android:textColor="@color/primaryTextColor"-->
-                    <!--                            android:textSize="16dp"-->
-                    <!--                            android:layout_marginLeft="10dp"-->
-                    <!--                            android:layout_marginRight="10dp"-->
-                    <!--                            android:layout_marginTop="10dp"-->
-                    <!--                            android:layout_marginBottom="5dp">-->
-
-                    <!--                        </TextView>-->
-
-                    <!--                        <com.google.android.material.textfield.TextInputLayout-->
-                    <!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
-                    <!--                            android:layout_width="match_parent"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:hint="Enter driver contact"-->
-                    <!--                            android:layout_marginLeft="10dp"-->
-                    <!--                            android:layout_marginRight="10dp"-->
-                    <!--                            android:layout_marginBottom="10dp"-->
-                    <!--                            android:transitionName="name">-->
-
-                    <!--                            <com.google.android.material.textfield.TextInputEditText-->
-                    <!--                                android:id="@+id/edDriverNo"-->
-                    <!--                                android:layout_width="match_parent"-->
-                    <!--                                android:layout_height="match_parent">-->
-
-                    <!--                            </com.google.android.material.textfield.TextInputEditText>-->
-
-                    <!--                        </com.google.android.material.textfield.TextInputLayout>-->
+                                        </LinearLayout>
 
 
-                    <!--                    </LinearLayout>-->
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Vehical Number : "
+                                                android:textColor="@color/primaryTextColor"
+                                                android:textSize="16dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_marginTop="10dp"
+                                                android:layout_marginBottom="5dp">
+
+                                            </TextView>
+
+                                            <TextView
+                                                android:id="@+id/tvVehicalNum"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=""
+                                                android:textColor="@color/Yellow"
+                                                android:background="@drawable/rect_background"
+                                                android:backgroundTint="@color/black"
+                                                android:textSize="16dp">
+
+                                            </TextView>
 
 
-                    <!--                    <LinearLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="wrap_content"-->
-                    <!--                        android:orientation="vertical">-->
-
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="match_parent"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:text="Vehical Number : "-->
-                    <!--                            android:textColor="@color/primaryTextColor"-->
-                    <!--                            android:textSize="16dp"-->
-                    <!--                            android:layout_marginLeft="10dp"-->
-                    <!--                            android:layout_marginRight="10dp"-->
-                    <!--                            android:layout_marginTop="10dp"-->
-                    <!--                            android:layout_marginBottom="5dp">-->
-
-                    <!--                        </TextView>-->
-
-                    <!--                        <com.google.android.material.textfield.TextInputLayout-->
-                    <!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
-                    <!--                            android:layout_width="match_parent"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:hint="Enter vehical number"-->
-                    <!--                            android:layout_marginLeft="10dp"-->
-                    <!--                            android:layout_marginRight="10dp"-->
-                    <!--                            android:layout_marginBottom="10dp"-->
-                    <!--                            android:transitionName="name">-->
-
-                    <!--                            <com.google.android.material.textfield.TextInputEditText-->
-                    <!--                                android:id="@+id/edVehicalNo"-->
-                    <!--                                android:layout_width="match_parent"-->
-                    <!--                                android:layout_height="match_parent">-->
-
-                    <!--                            </com.google.android.material.textfield.TextInputEditText>-->
-
-                    <!--                        </com.google.android.material.textfield.TextInputLayout>-->
-
-
-                    <!--                    </LinearLayout>-->
+                                        </LinearLayout>
 
 
                     <LinearLayout
@@ -441,10 +320,10 @@
                         android:layout_marginEnd="12dp"
                         android:layout_marginRight="5dp"
                         android:layout_weight="4"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="No. of Seat : "
                             android:textColor="@color/primaryTextColor"
@@ -452,41 +331,20 @@
 
                         </TextView>
 
-                        <RadioGroup
-                            android:id="@+id/availableSpaceRG"
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:id="@+id/tvNoOfSeats"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:text=""
+                            android:textColor="@color/Yellow"
+                            android:background="@drawable/rect_background"
+                            android:backgroundTint="@color/black"
+                            android:textSize="16dp">
 
-                            <RadioButton
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="1"
-                                tools:ignore="TouchTargetSizeCheck" />
+                        </TextView>
 
-                            <RadioButton
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="2"
-                                tools:ignore="TouchTargetSizeCheck" />
 
-                            <RadioButton
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="3"
-                                tools:ignore="TouchTargetSizeCheck" />
 
-                            <RadioButton
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="4"
-                                tools:ignore="TouchTargetSizeCheck" />
-
-                        </RadioGroup>
                     </LinearLayout>
 
 
@@ -498,10 +356,10 @@
                         android:layout_marginEnd="12dp"
                         android:layout_marginRight="5dp"
                         android:layout_weight="4"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Type : "
                             android:textColor="@color/primaryTextColor"
@@ -509,35 +367,18 @@
 
                         </TextView>
 
-                        <RadioGroup
-                            android:id="@+id/typeRG"
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:id="@+id/tvType"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:text=""
+                            android:textColor="@color/Yellow"
+                            android:background="@drawable/rect_background"
+                            android:backgroundTint="@color/black"
+                            android:textSize="16dp">
 
-                            <RadioButton
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="Diesel"
-                                tools:ignore="TouchTargetSizeCheck" />
+                        </TextView>
 
-                            <RadioButton
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="Petrol"
-                                tools:ignore="TouchTargetSizeCheck" />
-
-                            <RadioButton
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="CNG"
-                                tools:ignore="TouchTargetSizeCheck" />
-
-
-                        </RadioGroup>
                     </LinearLayout>
 
 
@@ -549,10 +390,10 @@
                         android:layout_marginEnd="12dp"
                         android:layout_marginRight="5dp"
                         android:layout_weight="4"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AC/None AC : "
                             android:textColor="@color/primaryTextColor"
@@ -560,36 +401,26 @@
 
                         </TextView>
 
-                        <RadioGroup
-                            android:id="@+id/acNoneAcRG"
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:id="@+id/tvAcNoneAc"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="15dp"
-                            android:orientation="horizontal">
+                            android:text=""
+                            android:textColor="@color/Yellow"
+                            android:background="@drawable/rect_background"
+                            android:backgroundTint="@color/black"
+                            android:textSize="16dp">
 
-                            <RadioButton
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="AC"
-                                tools:ignore="TouchTargetSizeCheck" />
+                        </TextView>
 
-                            <RadioButton
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="None AC"
-                                tools:ignore="TouchTargetSizeCheck" />
-
-
-                        </RadioGroup>
                     </LinearLayout>
 
                 </LinearLayout>
 
-                <!--    </androidx.cardview.widget.CardView>-->
 
             </LinearLayout>
+
+
 
         </ScrollView>
 

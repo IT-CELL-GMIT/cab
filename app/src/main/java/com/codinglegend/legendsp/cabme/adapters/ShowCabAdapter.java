@@ -1,6 +1,7 @@
 package com.codinglegend.legendsp.cabme.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.codinglegend.legendsp.cabme.R;
+import com.codinglegend.legendsp.cabme.activity_book_now;
 import com.codinglegend.legendsp.cabme.common;
 import com.codinglegend.legendsp.cabme.models.ShowCabModel;
 
@@ -46,7 +48,9 @@ public class ShowCabAdapter extends RecyclerView.Adapter<ShowCabAdapter.CabHolde
         holder.bookNowBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                common.showToast(context, list.get(position).getCabId());
+
+                context.startActivity(new Intent(context, activity_book_now.class)
+                        .putExtra("cabId", list.get(position).getCabId()));
 
             }
         });

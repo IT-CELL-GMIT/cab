@@ -14,6 +14,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.codinglegend.legendsp.cabme.activities.LoginActivity;
 import com.codinglegend.legendsp.cabme.databinding.ActivityLoginBinding;
 
 public class activity_spalshscreen extends AppCompatActivity {
@@ -35,7 +36,7 @@ public class activity_spalshscreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(activity_spalshscreen.this, ActivityLoginBinding.class);
+                Intent intent = new Intent(activity_spalshscreen.this, LoginActivity.class);
 
                 Pair[] pairs = new Pair[1];
                 pairs[0] = new Pair<View,String>(textView, "logo_text");
